@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'bug',
+    path: '',
     loadChildren: () =>
       import('../feature/feature.module').then(m => m.FeatureModule)
   }

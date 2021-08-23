@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { NgChartsModule } from 'ng2-charts';
-import { MyComponent } from './components/my.component';
+import { NgChartsModule } from "ng2-charts";
 
 @NgModule({
-  imports: [CommonModule, RouterModule, ReactiveFormsModule, NgChartsModule],
-  declarations: [MyComponent],
-  exports: [MyComponent],
+  imports: [ CommonModule, ReactiveFormsModule, NgChartsModule ],
+  declarations: [],
+  exports: [ NgChartsModule ],
   providers: []
 })
-export class SharedModule {}
+export class SharedModule {
+}
